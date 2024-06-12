@@ -4,7 +4,9 @@ body {
     padding: 0;
 }
 
-header {}
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
 
 .nav-links {
     background-color: #faedcd;
@@ -79,7 +81,12 @@ img {
 .skills-logo {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espacio entre los logos */
+    gap: 20px;
+    /* Espacio entre los logos */
+}
+
+.skills-card h4 {
+    text-align: center;
 }
 
 .skills-logo div {
@@ -88,38 +95,201 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    background-color: white; /* Fondo blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    background-color: white;
+    /* Fondo blanco */
 }
-
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .skills-logo div i {
-    font-size: 3em; /* Tamaño de ícono */
+    font-size: 3em;
+    /* Tamaño de ícono */
 }
 
 .skills-logo div label {
-    font-size: 1.2em; /* Tamaño de texto */
-    margin-top: 10px; /* Espacio superior */
+    font-size: 1.2em;
+    /* Tamaño de texto */
+    margin-top: 10px;
+    /* Espacio superior */
 }
 
-.educacion{
+.educacion {
     background-color: #D4A373;
 }
-/*
-    .formacion-academica {
-        text-align: center; 
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    margin: 10px;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contacto {
+    background-color: #faedcd;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contacto-info {
+    margin: auto;
+    max-width: 600px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Estilos para tabletas */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        padding-left: 2em;
+        padding-right: 2em;
     }
-    
-    .formacion-academica>div {
-        display: flex; 
-        justify-content: center; 
+
+    .contenido-l {
+        padding: 2em;
     }
-    .h-formacion{
-       margin-right: 50px;
+
+    .foto img {
+        width: 100%;
+        margin-top: 20px;
     }
-    .universidad{
-        background-color: white;
+
+    .skills-logo div {
+        width: 100px;
+        height: 100px;
     }
-    .curso{
-        background-color: blue;
-    }*/
+
+    .skills-logo div i {
+        font-size: 2.5em;
+    }
+
+    .skills-logo div label {
+        font-size: 1em;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+/* Estilos para tabletas y dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        padding: 1em;
+    }
+
+    .div-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-l {
+        padding: 2em;
+    }
+
+    .foto img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .skills-logo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-logo div {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .skills-logo div i {
+        font-size: 2.5em;
+    }
+
+    .skills-logo div label {
+        font-size: 0.8em;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sobremi>div {
+        padding: 2em;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 480px) {
+    .nav-links {
+        padding: 0.5em;
+    }
+
+    .div-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-l {
+        padding: 1em;
+    }
+
+    .foto img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .skills-logo div {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+
+    .skills-logo div i {
+        font-size: 2em;
+    }
+
+    .skills-logo div label {
+        font-size: 0.6em;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sobremi>div {
+        padding: 1em;
+    }
+}
